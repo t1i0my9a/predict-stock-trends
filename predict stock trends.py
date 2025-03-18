@@ -13,3 +13,8 @@ index = {
 start_date = "2000-01-01"
 finish_date = "2025-01-01"
 
+#get data
+df_list = []
+for name, symbol in index.item():
+    stock_data = yf.download(symbol, start = start_date, end = finish_date)
+
