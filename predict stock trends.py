@@ -17,4 +17,13 @@ finish_date = "2025-01-01"
 df_list = []
 for name, symbol in index.item():
     stock_data = yf.download(symbol, start = start_date, end = finish_date)
+    stock_data["index"] = name
+    df_list.append(stock_data)
+
+#all data gathering to one data frame
+df = pd.concat(df_list)
+
+#save to CSV
+df.to_CSV("Stock_data.csv")
+print("The data can saved!!")
 
