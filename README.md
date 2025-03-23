@@ -9,3 +9,7 @@ This is my personal project to understand python deeply
 ## What I Learned
 - Improved my understanding of Linear Regression
 - Enhanced my skills in using libraries and fundamental function as `pandas`, `yfinance`, and `scikit-learn`
+
+##Screen shot
+- Dashboard.png
+- 
