@@ -12,4 +12,5 @@ This is my personal project to understand python deeply
 
 ##Screen shot
 - Dashboard.png
-- 
+- Dashboard 2.png
+  
