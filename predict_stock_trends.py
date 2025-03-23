@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import numpy as np
 import streamlit as st
+import os
 
 #get information about index
 Index = {
@@ -40,6 +41,7 @@ df = pd.concat(df_list, ignore_index = True)
 df.to_csv("Stock_data.csv", index = False)
 
 #visualization
+os.makedirs("output", exist_ok=True)
 plt.figure(figsize = (15, 5))
 for name in Index.keys():
     subset = df[df["index"] == name]
@@ -50,6 +52,11 @@ for name in Index.keys():
     plt.legend()#display label
     plt.grid()#add background line
     plt.show()
+    filename = name.lower().replace(" ", "_").replace("(", "").replace(")", "").replace("/", "") + ".png"
+    plt.savefig(f"output/{filename}")
+    plt.close()
+
+
 
 
 
