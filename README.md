@@ -14,4 +14,5 @@ This is my personal project to understand python deeply
 - Dashboard.png
 - Dashboard 2.png
 - output/s&p500.png
+- output/nikkei_225.png
   
