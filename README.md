@@ -16,4 +16,5 @@ This is my personal project to understand python deeply
 - output/s&p500.png
 - output/nikkei_225.png
 - output/euro_stoxx_50.png
+- output/eem_emerging_markets.png
   
