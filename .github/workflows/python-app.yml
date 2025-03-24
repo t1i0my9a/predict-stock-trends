@@ -27,7 +27,7 @@ jobs:
         run: |
           python predict_stock_trends.py
 
-      - name:  Commit and Push
+      - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
